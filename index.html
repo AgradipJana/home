@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+  <title>AGRADIP</title>
+  <script src="https://kit.fontawesome.com/c534abef2b.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url(bg_1.gif) no-repeat center/cover;
+    }
+
+    .button {
+      font-size: 1.2rem;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      background: #ffffff94;
+      animation: Color 4s linear infinite;
+      -webkit-animation: Color 4s ease-in-out infinite;
+    }
+
+    @keyframes Color {
+      0% {
+        color: #A0D468;
+      }
+
+      20% {
+        color: #4FC1E9;
+      }
+
+      40% {
+        color: #FFCE54;
+      }
+
+      60% {
+        color: #FC6E51;
+      }
+
+      80% {
+        color: #ED5565;
+      }
+
+      100% {
+        color: #AC92EC;
+      }
+    }
+
+    .body {
+      margin: 15px;
+      width: 97.5vw;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header {
+      width: 98vw;
+      height: 20vh;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo_container {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 100%;
+      position: relative;
+      top: 3vh;
+      left: 2vw;
+      background: url(logo.jpg) no-repeat center/cover;
+    }
+
+    .menubar {
+      display: none;
+      position: absolute;
+      top: 8vh;
+      right: 5vw;
+    }
+
+    .menu {
+      background: #ffffff;
+      width: 35px;
+      height: 4px;
+      margin: 5px;
+      border-radius: 5%;
+    }
+
+    .nav_container .nav_bar {
+      display: flex;
+      flex-direction: row;
+      padding: 50px;
+    }
+
+    .nav_container .nav_bar li {
+      list-style: none;
+    }
+
+    .nav_container .nav_bar li a {
+      color: white;
+      padding: 5px;
+      font-size: 17px;
+    }
+
+    .nav_container .nav_bar li a:hover {
+      transition-duration: 0.3s;
+      color: #2f2c8d;
+    }
+
+    .welcome_container {
+      margin-top: 5vh;
+      margin-left: 20vw;
+      height: 62vh;
+      font-size: 2rem;
+
+    }
+
+    .welcome_container h1,
+    .welcome_container h2,
+    .welcome_container p {
+      margin: 0;
+      background: linear-gradient(to right, #0047ec, #fc6767, #274198);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .welcome_container h2 {
+      font-size: 1.7rem;
+      margin-left: 10px;
+    }
+
+    .welcome_container p {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .footer {
+      padding: 10px;
+      background: white;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      text-align: center;
+    }
+
+    @media (max-width:426px) {
+      .body {
+        margin: 10px;
+        width: 95vw;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        align-items: center;
+      }
+
+      .logo_container {
+        width: 8rem;
+        height: 8rem;
+        position: relative;
+        top: 9vh;
+        left: 0;
+      }
+
+      .nav_container .nav_bar {
+        padding: 40px;
+      }
+
+      .nav_container .nav_bar li a {
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+      }
+
+      .welcome_container {
+        height: 39vh;
+        font-size: 1rem;
+        margin-top: 0;
+        margin-left: 0;
+        text-align: center;
+      }
+
+      .welcome_container h2 {
+        font-size: 1rem;
+      }
+
+      .button {
+        width: 40vw;
+        background: #fff;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="body">
+    <header class="header">
+      <div class="logo_container"></div>
+      <div class="menubar">
+        <div class="menu"></div>
+        <div class="menu"></div>
+        <div class="menu"></div>
+      </div>
+      <nav class="nav_container">
+        <ul class="nav_bar">
+          <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-quora"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="welcome_container">
+        <h2>Hi, I'm <h2>
+            <h1> AGRADIP JANA</h1>
+            <p>Full Stack Web Developer | BCA '26</p> <br>
+            <div class="welcome_buttons">
+              <a href="" class="button">Coming Soon</a>
+            </div>
+      </div>
+
+    </main>
+    <div class="footer">
+      <p>Website currently under Constraction.</p>
+    </div>
+  </div>
+</body>
+
+</html>
