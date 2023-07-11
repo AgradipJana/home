@@ -5,240 +5,994 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- favicon -->
   <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
-  <title>AGRADIP</title>
-  <script src="https://kit.fontawesome.com/c534abef2b.js" crossorigin="anonymous"></script>
+  <title>Agradip | Portfolio</title>
+  
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+<script src="https://kit.fontawesome.com/8c436c430f.js" crossorigin="anonymous"></script>
+
+    <!-- style -->
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins&display=swap');
+    
+    /* reset */
+    @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins&display=swap');
 
     * {
-      padding: 0;
-      margin: 0;
       font-family: 'Poppins', sans-serif;
+      color: #022333;
     }
 
-    body {
-      background: url(bg_1.gif) no-repeat center/cover;
+    html {
+      scroll-behavior: smooth;
     }
 
-    .button {
-      font-size: 1.2rem;
+    a {
+      color: #022333;
       text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 30px;
-      background: #ffffff94;
-      animation: Color 4s linear infinite;
-      -webkit-animation: Color 4s ease-in-out infinite;
     }
 
-    @keyframes Color {
-      0% {
-        color: #A0D468;
-      }
-
-      20% {
-        color: #4FC1E9;
-      }
-
-      40% {
-        color: #FFCE54;
-      }
-
-      60% {
-        color: #FC6E51;
-      }
-
-      80% {
-        color: #ED5565;
-      }
-
-      100% {
-        color: #AC92EC;
-      }
+    a:hover {
+      color: #f54235 !important;
     }
 
-    .body {
-      margin: 15px;
-      width: 97.5vw;
-      border-radius: 10px;
-      background-color: rgba(255, 255, 255, 0.5);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    b,
+    b a {
+      color: #f56f6f;
     }
 
-    header {
-      width: 98vw;
-      height: 20vh;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .logo_container {
-      width: 5rem;
-      height: 5rem;
-      border-radius: 100%;
-      position: relative;
-      top: 3vh;
-      left: 2vw;
-      background: url(logo.jpg) no-repeat center/cover;
-    }
-
-    .menubar {
-      display: none;
-      position: absolute;
-      top: 8vh;
-      right: 5vw;
-    }
-
-    .menu {
-      background: #ffffff;
-      width: 35px;
-      height: 4px;
-      margin: 5px;
-      border-radius: 5%;
-    }
-
-    .nav_container .nav_bar {
-      display: flex;
-      flex-direction: row;
-      padding: 50px;
-    }
-
-    .nav_container .nav_bar li {
-      list-style: none;
-    }
-
-    .nav_container .nav_bar li a {
-      color: white;
-      padding: 5px;
-      font-size: 17px;
-    }
-
-    .nav_container .nav_bar li a:hover {
-      transition-duration: 0.3s;
-      color: #2f2c8d;
-    }
-
-    .welcome_container {
-      margin-top: 5vh;
-      margin-left: 20vw;
-      height: 62vh;
-      font-size: 2rem;
-
-    }
-
-    .welcome_container h1,
-    .welcome_container h2,
-    .welcome_container p {
-      margin: 0;
-      background: linear-gradient(to right, #0047ec, #fc6767, #274198);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .welcome_container h2 {
-      font-size: 1.7rem;
-      margin-left: 10px;
-    }
-
-    .welcome_container p {
-      font-size: 1rem;
-      font-weight: 600;
-    }
-
-    .footer {
-      padding: 10px
-      background: white;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
+    /* title */
+    .title {
       text-align: center;
     }
 
-    @media (max-width:700px) {
-      .body {
-        margin: 10px;
-        width: 95vw;
+    .title h1 {
+      font-family: 'Fjalla One', sans-serif;
+    }
+
+    .title .wrap {
+      background: #022333;
+      position: relative;
+      left: 46vw;
+      top: 0;
+      width: 6vw;
+      height: 3px;
+      border-radius: 30px;
+    }
+
+    .title .wrapper {
+      background: #627179;
+      position: relative;
+      left: 48vw;
+      top: -6.5px;
+      width: 2vw;
+      height: 10px;
+      border-radius: 30px;
+    }
+
+    /* navbar */
+    .navbar {
+      padding: 0;
+    }
+
+    .container-fluid {
+      box-shadow: 2px 2px 10px #eee;
+    }
+
+    .navbar-brand img {
+          max-width: 6rem;
+    min-width: 2rem;
+    width: auto;
+    border-radius: 100%;
+margin-left: 2vw;
+    }
+
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      width: 3rem;
+      height: 2rem;
+    }
+
+    .navbar-toggler:focus {
+      text-decoration: none;
+      outline: 0;
+      box-shadow: none;
+    }
+
+    @media (min-width:992px) {
+      #navbarNav {
+        position: absolute;
+        right: 20px;
       }
 
-      header {
-        display: flex;
-        flex-direction: column;
-        height: 50vh;
-        align-items: center;
+    }
+
+    /* landing */
+    .landing-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 78vh;
+    }
+
+    .landing {
+      width: 50vw;
+      text-align: center;
+    }
+
+    .landing-image img {
+      width: 50vw;
+    }
+
+    .scroll {
+      position: absolute;
+      top: 84vh;
+      left: 50vw;
+      font-size: 30px;
+      animation: scroll 2.5s infinite;
+    }
+
+    @keyframes scroll {
+      0% {
+        top: 90vh;
       }
 
-      .logo_container {
-        width: 15rem;
-        height: 15rem;
-        position: relative;
-        top: 9vh;
-        left: 0;
+      50% {
+        top: 93vh;
       }
 
-      .nav_container .nav_bar {
-        padding: 40px;
+      100% {
+        top: 90vh;
+      }
+    }
+
+    /* about */
+    .about-section {
+      margin: auto;
+    }
+
+    .about-me {
+      background: url(bg-2.png) no-repeat center/cover;
+    }
+
+    .about-me .info {
+      width: 50w;
+      height:80vh;
+      padding: 50px;
+    }
+
+    .about-me .info .responsive-img {
+      display: none;
+    }
+
+    /* My story */
+    .timeline {
+      position: relative;
+      width: 660px;
+      margin: 0 auto;
+      margin-top: 20px;
+      padding: 1em 0;
+      list-style-type: none;
+    }
+
+    .timeline:before {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      content: ' ';
+      display: block;
+      width: 6px;
+      height: 100%;
+      margin-left: -3px;
+      background: rgb(80, 80, 80);
+      background: -moz-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(30, 87, 153, 1)), color-stop(100%, rgba(125, 185, 232, 1)));
+      background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+      background: -o-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+      background: -ms-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+      background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+
+      z-index: 5;
+    }
+
+    .timeline li {
+      padding: 1em 0;
+    }
+
+    .timeline li:after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+    .direction-l {
+      position: relative;
+      width: 300px;
+      float: left;
+      text-align: right;
+    }
+
+    .direction-r {
+      position: relative;
+      width: 300px;
+      float: right;
+    }
+
+    .flag-wrapper {
+      position: relative;
+      display: inline-block;
+
+      text-align: center;
+    }
+
+    .flag {
+      position: relative;
+      display: inline;
+      background: rgb(248, 248, 248);
+      padding: 6px 10px;
+      border-radius: 5px;
+
+      font-weight: 600;
+      text-align: left;
+    }
+
+    .direction-l .flag {
+      -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+      box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .direction-r .flag {
+      -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .direction-l .flag:before,
+    .direction-r .flag:before {
+      position: absolute;
+      top: 50%;
+      right: -40px;
+      content: ' ';
+      display: block;
+      width: 12px;
+      height: 12px;
+      margin-top: -10px;
+      background: #fff;
+      border-radius: 10px;
+      border: 4px solid rgb(255, 80, 80);
+      z-index: 10;
+    }
+
+    .direction-r .flag:before {
+      left: -40px;
+    }
+
+    .direction-l .flag:after {
+      content: "";
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      height: 0;
+      width: 0;
+      margin-top: -8px;
+      border: solid transparent;
+      border-left-color: rgb(248, 248, 248);
+      border-width: 8px;
+      pointer-events: none;
+    }
+
+    .direction-r .flag:after {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      height: 0;
+      width: 0;
+      margin-top: -8px;
+      border: solid transparent;
+      border-right-color: rgb(248, 248, 248);
+      border-width: 8px;
+      pointer-events: none;
+    }
+
+    .time-wrapper {
+      display: inline;
+
+      line-height: 1em;
+      font-size: 0.66666em;
+      color: rgb(250, 80, 80);
+      vertical-align: middle;
+    }
+
+    .direction-l .time-wrapper {
+      float: left;
+    }
+
+    .direction-r .time-wrapper {
+      float: right;
+    }
+
+    .time {
+      display: inline-block;
+      padding: 4px 6px;
+      background: rgb(248, 248, 248);
+    }
+
+    .desc {
+      margin: 1em 0.75em 0 0;
+
+      font-size: 0.77777em;
+      font-style: italic;
+      line-height: 1.5em;
+    }
+
+    .direction-r .desc {
+      margin: 1em 0 0 0.75em;
+    }
+
+    @media screen and (max-width: 660px) {
+
+      .timeline {
+        width: 100%;
+        padding: 4em 0 1em 0;
       }
 
-      .nav_container .nav_bar li a {
-        color: white;
-        padding: 10px;
-        font-size: 20px;
+      .timeline li {
+        padding: 2em 0;
       }
 
-      .welcome_container {
-        height: 39vh;
-        font-size: 1rem;
-        margin-top: 0;
-        margin-left: 0;
+      .direction-l,
+      .direction-r {
+        float: none;
+        width: 100%;
+
         text-align: center;
       }
 
-      .welcome_container h2 {
-        font-size: 1rem;
+      .flag-wrapper {
+        text-align: center;
       }
 
-      .button {
-        width: 40vw;
+      .flag {
+        background: rgb(255, 255, 255);
+        z-index: 15;
+      }
+
+      .direction-l .flag:before,
+      .direction-r .flag:before {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        content: ' ';
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin-left: -9px;
         background: #fff;
+        border-radius: 10px;
+        border: 4px solid rgb(255, 80, 80);
+        z-index: 10;
+      }
+
+      .direction-l .flag:after,
+      .direction-r .flag:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -8px;
+        height: 0;
+        width: 0;
+        margin-left: -8px;
+        border: solid transparent;
+        border-bottom-color: rgb(255, 255, 255);
+        border-width: 8px;
+        pointer-events: none;
+      }
+
+      .time-wrapper {
+        display: block;
+        position: relative;
+        margin: 4px 0 0 0;
+        z-index: 14;
+      }
+
+      .direction-l .time-wrapper {
+        float: none;
+      }
+
+      .direction-r .time-wrapper {
+        float: none;
+      }
+
+      .desc {
+        position: relative;
+        margin: 1em 0 0 0;
+        padding: 1em;
+        background: rgb(245, 245, 245);
+        -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+        -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+
+        z-index: 15;
+      }
+
+      .direction-l .desc,
+      .direction-r .desc {
+        position: relative;
+        margin: 1em 1em 0 1em;
+        padding: 1em;
+
+        z-index: 15;
+      }
+
+    }
+
+    @media screen and (min-width:400px) and (max-width: 660px) {
+
+      .direction-l .desc,
+      .direction-r .desc {
+        margin: 1em 4em 0 4em;
+      }
+
+    }
+
+    /* startup */
+
+    .startup {
+      width: 97vw;
+      height: 30vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .startup .brand img {
+      width: 200px;
+      opacity: 0.5;
+      background: none;
+      padding: 20px;
+    }
+
+    .startup .brand img:hover {
+      opacity: 1;
+      transition-duration: 0.2s;
+    }
+
+    .moreproject {
+      color: rgb(255, 56, 89);
+      font-size: 20px;
+      text-align: center;
+      margin: 30px;
+    }
+
+    .moreproject:hover {
+      color: rgb(243, 145, 161);
+      transition-duration: 0.3s;
+      cursor: pointer;
+    }
+
+    /* Achivement */
+    .skill-section {
+      max-width: 500px;
+      min-width: 200px;
+      width: auto;
+      margin: auto;
+      margin-top: 5vh;
+    }
+
+    .award-section {
+      display: flex;
+      justify-content: center;
+      margin-top: 5vh;
+    }
+
+    .award-section .card {
+      margin: auto;
+    }
+
+    /* contect */
+    iframe {
+      border: 0;
+      width: 98vw;
+    }
+
+    /* footer */
+    footer {
+      margin: 5vh 0 0 0;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      height: auto;
+      background: #d1d1d1;
+    }
+
+    .footer-link ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer-link ul li {
+      padding: 15px;
+      list-style: none;
+    }
+
+    .footer-logo {
+      width: 5rem;
+      display: block;
+      margin: auto;
+    }
+
+    @media (max-width:768px) {
+.about-section{
+    height: 144vh;
+}      
+.about-me .info .responsive-img {
+        display: inline-block;
+        width: 50vw;
+      }
+
+      .about-me {
+        background: none;
+      }
+
+      .about-me .info {
+        width: 100vw;
+        padding: 50px;
+        text-align: center;
+      }
+
+      .about-me .info .responsive-img {
+        display: inline-block;
+      }
+
+      .startup .brand img {
+        width: 140px;
+        opacity: 0.5;
+        background: none;
+        padding: 20px;
+      }
+
+      .award-section {
+        display: flex;
+        justify-content: center;
+        margin-top: 5vh;
+        flex-wrap: wrap;
+      }
+
+      .award-section .card {
+        margin: 10px auto;
+      }
+
+    }
+
+    @media (max-width:599px) {
+
+      .startup .brand img {
+        width: 104px;
+        opacity: 0.5;
+        background: none;
+        padding: 20px;
+      }
+
+      .skill-section {
+        max-width: 400px;
+        min-width: 200px;
+        width: auto;
+        margin: auto;
+        margin-top: 5vh;
+      }
+
+      .footer-link ul li {
+        padding: 10px;
+        list-style: none;
+      }
+
+    }
+
+    @media (max-width:430px) {
+
+    .navbar-brand img {
+          max-width: 4rem;
+    min-width: 2rem;
+    width: auto;
+    border-radius: 100%;
+margin-left: 2vw;
+    }
+
+      .landing-section {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 72vh;
+      }
+
+      .landing {
+        width: 100vw;
+        padding-top: 5vh;
+      }
+
+      .landing h5 {
+        font-size: 0.9rem;
+      }
+
+      .landing-image img {
+        width: 50vw;
+      }
+
+.about-section{
+    height: 112vh;
+}  
+      .about-me .info h1 {
+        font-size: 1.5rem;
+      }
+
+      .about-me .info h6 {
+        font-size: 0.5rem;
+      }
+
+      .about-me .info p {
+        font-size: 0.7rem;
+      }
+
+      .footer-link ul li {
+        padding: 5px;
+      }
+    }
+
+    @media (max-width:403px) {
+      .landing-section {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 72vh;
+      }
+
+      .landing {
+        width: 100vw;
+        padding-top: 5vh;
+      }
+
+      .landing h5 {
+        font-size: 0.9rem;
+      }
+
+      .landing-image img {
+        width: 50vw;
+      }
+
+      .about-me .info h1 {
+        font-size: 1.5rem;
+      }
+
+      .about-me .info h6 {
+        font-size: 0.5rem;
+      }
+
+      .about-me .info p {
+        font-size: 0.7rem;
+      }
+
+      .startup .brand img {
+        width: 90px;
+        opacity: 0.5;
+        background: none;
+        padding: 20px;
+      }
+
+      .skill-section {
+        width: 300px;
+      }
+
+      .footer-link ul {
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (max-width:325px) {
+      .landing-section {
+        flex-direction: column;
+      }
+
+      .landing {
+        width: 100vw;
+        padding-top: 0vh;
+      }
+
+      .landing h5 {
+        font-size: 0.9rem;
+      }
+
+      .landing-image img {
+        width: 50vw;
+        display: none;
+      }
+
+      .about-me .info h1 {
+        font-size: 1.5rem;
+      }
+
+      .about-me .info h6 {
+        font-size: 0.5rem;
+      }
+
+      .about-me .info p {
+        font-size: 0.7rem;
+      }
+
+      .startup .brand img {
+        width: 80px;
+        opacity: 0.5;
+        background: none;
+        padding: 20px;
+      }
+
+      iframe {
+        border: 0;
+        width: 100vw;
+        height: 158vh;
       }
     }
   </style>
+
+  <script src="https://kit.fontawesome.com/e086a472a2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="body">
-    <header class="header">
-      <div class="logo_container"></div>
-      <div class="menubar">
-        <div class="menu"></div>
-        <div class="menu"></div>
-        <div class="menu"></div>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="logo.jpg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><i class="fa-solid fa-user"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#story"><i class="fa-solid fa-road"></i> My Journey </a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#achivement"> <i class="fa-solid fa-code"></i> Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contect"><i class="fa-solid fa-message"></i> Contect</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <nav class="nav_container">
-        <ul class="nav_bar">
-          <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-quora"></i></a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <div class="welcome_container">
-        <h2>Hi, I'm <h2>
-            <h1> AGRADIP JANA</h1>
-            <p>Full Stack Web Developer | BCA '26</p> <br>
-            <div class="welcome_buttons">
-              <a href="" class="button">Coming Soon</a>
-            </div>
+    </nav>
+
+    <section class="landing-section" id="home">
+     <div class="landing"><h1>
+          Hi, I'M <b>AGRADIP JANA</b>
+        </h1>
+        <br>
+        <h5>Full Stack Web Developer | BCA'26</h5>
       </div>
 
-    </main>
-    <div class="footer">
-      <p>Website currently under Constraction.</p>
+      <div class="landing-image">
+        <img src="bg-1.jpg" alt="bg-1">
+      </div>
+    </section>
+    <div class="scroll">
+      <a href=""><i class="fa-solid fa-angle-down"></i></a>
     </div>
-  </div>
+  </header>
+  <br>
+  <main>
+
+    <section class="about-section" id="about">
+      <div class="title">
+        <h1>About Me</h1>
+        <div class="wrap"></div>
+        <div class="wrapper"></div>
+      </div>
+      <div class="about-me">
+        <div class="info">
+          <img src="about.png" alt="me" class="responsive-img">
+          <h1>I'm Agradip Jana</h1>
+          <h6><a href=""> <b>Full Stack Web Developer</b></a> and <a href=""><b>BCA undergraduate</b></a></h6>
+          <hr>
+          <p>Hi, I am Agradip Jana.
+Currently Pursuing BCA Degree from Midnapore Day College.<br>
+I am a self-taught Full Stack Developer.
+I have skilled HTML, CSS, JS, PHP, MYSQL.<br>Currently learning React.Js.  <br><br>
+<br>I am a Web scholar, Introvert, Explorer,<br> Hardcore thinker, Wannabe
+           Sofftware Engineer.</p>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <!-- The Timeline -->
+      <div class="title">
+        <h1>My Journey</h1>
+        <div class="wrap"></div>
+        <div class="wrapper"></div>
+      </div>
+      <ul class="timeline">
+        <!-- Item 1 -->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Learned  HTML & CSS </span>
+              <span class="time-wrapper"><span class="time">2018 - 2019</span></span>
+            </div>
+          </div>
+        </li>
+
+<li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag">10th Boards</span>
+              <span class="time-wrapper"><span class="time">2020 - 2021</span></span>
+            </div>
+            <div class="desc">Secured State Rank 6th. Scored 692/700(AA)</div>
+          </div>
+        </li>
+
+        <!-- Item 3 -->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Learned  JS </span>
+              <span class="time-wrapper"><span class="time">2021 - 2022</span></span>
+            </div>
+          </div>
+        </li>
+ <br>
+
+        <!-- Item 2 -->
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag">12th Boards </span>
+              <span class="time-wrapper"><span class="time">2022 - 2023</span></span>
+            </div>
+            <div class="desc"> Scored 402/500(A+)</div>
+          </div>
+        </li>
+<!-- Item 3 -->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Learned  MYSQL & PHP  </span>
+              <span class="time-wrapper"><span class="time">2022 - 2023</span></span>
+            </div>
+          </div>
+        </li>
+
+        <!-- Item 3 -->
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag">BCA </span>
+              <span class="time-wrapper"><span class="time">2023 - Present</span></span>
+            </div>
+            <div class="desc">Admited into Midnapore Day College.</div>
+          </div>
+        </li>
+              
+
+<!-- Item 3 -->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Learning  React.Js  </span>
+              <span class="time-wrapper"><span class="time">2023 - present </span></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <br><br>
+
+    </section>
+
+    <section class="achivement-section" id="achivement">
+
+
+      <div class="title">
+        <h1>Skills</h1>
+        <div class="wrap"></div>
+        <div class="wrapper"></div>
+      </div>
+
+      <div class="skill-section">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85"
+            aria-valuemin="0" aria-valuemax="100" style="width: 95%;">HTML 95%</div>
+        </div><br>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85"
+            aria-valuemin="0" aria-valuemax="100" style="width: 85%;">CSS 85%</div>
+        </div><br>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85"
+            aria-valuemin="0" aria-valuemax="100" style="width: 85%;">JAVASCRIPT 85%</div>
+        </div><br>
+<div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85"
+            aria-valuemin="0" aria-valuemax="100" style="width: 65%;">MYSQL 65%</div>
+        </div><br>
+
+<div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85"
+            aria-valuemin="0" aria-valuemax="100" style="width: 75%;">PHP 75%</div>
+        </div><br>
+
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85"
+            aria-valuemin="0" aria-valuemax="100" style="width: 85%;">Video Editing 85%</div>
+        </div><br>
+        
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85"
+            aria-valuemin="0" aria-valuemax="100" style="width: 25%;">React.Js (Learning)</div>
+        </div><br>
+        
+      </div>
+
+    </section>
+    <br>
+<div class="title">
+        <h1>Projects </h1>
+        <div class="wrap"></div>
+        <div class="wrapper"></div>
+      </div>
+    <h1 class="moreproject">Currently Working on .</h1>
+    <br><br>
+    <section class="contect-section" id="contect">
+
+      <div class="title">
+        <h1>Contect</h1>
+        <div class="wrap"></div>
+        <div class="wrapper"></div>
+      </div>
+      <br>
+      <div class="contect">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLScm-IcHeG_UoO91uMFgeVL3bWyZTN2uDo6z1jQpxrJKELTfVg/viewform?embedded=true"
+          width="640" height="708" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-link">
+      <ul>
+        <li>
+          <a href="https://in.linkedin.com/in/agradip-jana-679313206"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/AgradipJ"><i class="fa-brands fa-twitter"></i></a>
+        <li>
+          <a href="https://www.instagram.com/iammas00m/"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+      </ul>
+    </div>
+    <p>@Copyright Agradip Jana || All Rights Reserved 2023</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
