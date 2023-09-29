@@ -43,7 +43,7 @@ Contact Information
 Feel free to contact me through the following channels:
 
 Email: workwithagradip@gmail.com
-LinkedIn: https://in.linkedin.com/in/agradip-jana-679313206
+LinkedIn: https://www.linkedin.com/in/agradipjana/
 GitHub: ttps://github.com/AgradipJana
 Twitter: https://twitter.com/agradip_twts
 Thank you for visiting my portfolio website! I hope you enjoy exploring my work and learning more about me. If you have any questions or would like to connect, please don't hesitate to reach out.
