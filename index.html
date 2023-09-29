@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi, I'm Agradip</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8c436c430f.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-track {
+    background: linear-gradient(to right, #8e9eab, #eef2f3);
+    -webkit-box-shadow: inset 0 0 6px rgba(109, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+     background: linear-gradient(120deg, #525252, #3d72b4);
+}
+
+        .button:hover {
+            transition-duration: 0.3s;
+            background: #00000085;
+            box-shadow: 10px 10px 5px #000000;
+        }
+
+        .social_instagram:hover {
+            background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+        }
+
+        .social_gmail:hover {
+            /* background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat; */
+            background: conic-gradient(from -45deg, #ea4335, #4285f4, #34a853, #fbbc05) 73% 55%/150% 150% no-repeat;
+        }
+
+        @media screen and (max-width:426px){
+
+            .logo_img{
+                width: 10rem !important;
+                height: 10rem !important;
+            }
+
+            .landing_bio h1{
+                font-size: 2rem !important;
+            }
+
+            .project_flex{
+                flex-direction: column !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- body container -->
+    <div class="body p-3 text-white bg-fixed"
+        style="background-image: url(bg_1.gif); background-repeat: no-repeat; background-size: cover; background-position: center; font-family: 'Poppins', sans-serif; width: 99.4vw;">
+        <!-- main -->
+        <div class="main-container flex flex-col relative rounded-xl w-full bg-white bg-opacity-10 backdrop-blur-md">
+            <!-- header -->
+            <div class="header flex flex-row justify-between m-0 p-7 cursor-pointer	h-1/6">
+                <!-- logo -->
+                <div class="logo">
+                    <h1 class="text-4xl font-bold text-white">Agr<p class="inline text-customgreen">adip</p>
+                    </h1>
+                </div>
+                <!-- navbar -->
+                <div class="navbar">
+                    <a href="error.html"><i class="fa-regular fa-circle-user text-3xl  hover:text-blue-600 hover:duration-150"></i></a>
+                    
+                </div>
+            </div>
+
+            <!-- landing -->
+            <div class="landing m-auto" style="height:82vh">
+                <div class="landing_bio text-white">
+                    <img src="logo.jpg" class="logo_img m-auto h-52 w-52 rounded-full" alt="logo"><br>
+                    <p class="text-center pb-2">Hi, I am</p>
+                    <h1 class="text-center text-6xl font-bold pb-2 text-customgreen">AGRADIP <p class="inline">JANA</p>
+                    </h1>
+                    <p class="text-center drop-shadow-2xl pb-5">Full Stack Developer &nbsp;|&nbsp; Tech
+                        Enthusiast</p>
+                    <br>
+                    <a class="button flex justify-center mx-36 text-center p-3 rounded-md bg-customblack"
+                        href="#about">Explore</a>
+                </div>
+            </div>
+
+            <!-- about me -->
+            <div class="about w-full">
+                <!-- about -->
+                <div class="about">
+                    <h1 class="title text-center text-3xl font-bold" id="about">Know Abo<p
+                            class="inline text-customgreen">ut Me.
+                        </p>
+                    </h1>
+                    <!-- about details -->
+                    <div class="about-box flex flex-row justify-around p-10 max-md:flex-col  max-md:justify-center " >
+                        <div class="about-bio w-5/12 max-md:w-full text-left max-md:text-center">
+                            <h1 class="text-customgreen font-bold text-4xl max-md:hidden">AGRADIP JANA</h1><br>
+                            <p>Hi, I am Agradip Jana. Currently Pursuing BCA Degree from Midnapore Day College. I am a
+                                self-taught
+                            <p class="inline text-customgreen">Full Stack Developer</p>. I know <p
+                                class="inline text-customgreen">HTML, CSS, JS, MYSQL, Bootstrap, Tailwind CSS, PHP</p>.
+                            Currently
+                            learning C language.</p><br>
+                            <div class="button inline-block p-3 pl-5 pr-5 rounded-md bg-customblack"><a
+                                    href="">Resume</a></div>
+                        </div>
+                        <!-- language -->
+                        <div class="language w-4/12 max-md:w-full">
+                            <div class="language_code flex flex-row justify-center items-center pt-10 p-5">
+                                <div class="code"><img src="img/html.png"
+                                        class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
+                                </div><br>
+                                <div class="code"><img src="img/css.png"
+                                        class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
+                                </div><br>
+                                <div class="code"><img src="img/js.png"
+                                        class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
+                                </div><br>
+                                <div class="code"><img src="img/bootstrap.png"
+                                        class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
+                                </div>
+                            </div>
+
+                            <div class="language flex flex-row justify-center items-center p-5">
+                                <div class="code"><img src="img/Tailwind.png"
+                                        class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
+                                </div><br>
+                                <div class="code"><img src="img/mysql.png"
+                                        class="w-28 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
+                                </div><br>
+                                <div class="code"><img src="img/php.png"
+                                        class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
+                                </div><br>
+                                <div class="code"><img src="img/c.png"
+                                        class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
+                                </div><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- social -->
+                    <div class="social_media flex flex-row justify-center space-x-2 max-md:space-x-0 max-md:bg-customblack" id="socials">
+                        <div
+                            class="social pl-5 pr-5 pt-2 pb-2  bg-transperent rounded-3xl m-3 hover:bg-sky-800 hover:duration-150 cursor-pointer">
+                            <abbr title="Linkedin">
+                                <a href="https://www.linkedin.com/in/agradipjana/" class="social_links"><i
+                                        class="fa-brands fa-linkedin-in text-grey text-2xl"></i></a>
+                            </abbr>
+                        </div>
+                        <div
+                            class="social pl-5 pr-5 pt-2 pb-2  bg-transperent rounded-3xl m-3 hover:bg-black hover:duration-150 cursor-pointer">
+
+                            <a href="https://twitter.com/agradip_twts" class="social_links"><abbr title="Twitter"><i
+                                        class="fa-brands fa-x-twitter text-grey text-2xl"></i></abbr> </a>
+
+                        </div>
+                        <div
+                            class="social pl-5 pr-5 pt-2 pb-2  bg-transperent rounded-3xl m-3 hover:bg-gray-600 hover:duration-150 cursor-pointer">
+                            <abbr title="Github">
+                                <a href="https://github.com/AgradipJana" class="social_links"><i class="fa-brands fa-github text-gray text-2xl"></i>
+                                </a>
+                            </abbr>
+                        </div>
+                        <div
+                            class="social social_instagram pl-5 pr-5 pt-2 pb-2  bg-transperent rounded-3xl m-3 hover:bg-customblack hover:duration-150 cursor-pointer">
+                            <abbr title="Instagram">
+                                <a href="https://www.instagram.com/iammas00m/" class="social_links"><i
+                                        class="fa-brands fa-instagram text-grey text-2xl"></i> </a>
+                            </abbr>
+                        </div>
+                        <div
+                            class="social social_gmail pl-5 pr-5 pt-2 pb-2  bg-transperent rounded-3xl m-3 hover:bg-customblack hover:duration-150 cursor-pointer">
+                            <abbr title="Mail">
+                                <a href="mailto: workwithagradip@gmail.com" class="social_links"><i
+                                        class="fa-regular fa-envelope text-grey text-2xl"></i></a>
+                            </abbr>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br><br>
+            <!-- Projects -->
+            <div class="projects w-full">
+                <h1 class="title text-center text-3xl font-bold" id="project">My <p class="inline text-customgreen">
+                        Projects
+                    </p>
+                </h1>
+                <div class="project_flex flex flex-row max-md:flex-col">
+                    <!-- project item -->
+                    <div class="max-w-sm m-auto my-10 rounded-lg bg-customblack shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="https://agradipjana.github.io/todolist/">
+                            <img class="rounded-t-lg" src="img/todolist.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="https://agradipjana.github.io/todolist/">
+                                <h5 class="mb-2 text-2xl tracking-tight text-white dark:text-white">
+                                    To Do List</h5>
+                            </a>
+                            <a href="https://agradipjana.github.io/todolist/"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-customblackhover rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Visit
+                                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- project item -->
+                    <div class="max-w-sm m-auto my-10 rounded-lg bg-customblack shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="https://agradipjana.github.io/weatherapp/">
+                            <img class="rounded-t-lg" src="img/weather.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="https://agradipjana.github.io/weatherapp/">
+                                <h5 class="mb-2 text-2xl tracking-tight text-white dark:text-white">
+                                    Weather App</h5>
+                            </a>
+                            <a href="https://agradipjana.github.io/weatherapp/"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-customblackhover rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Visit
+                                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- project item -->
+                    <div class="max-w-sm m-auto my-10 rounded-lg bg-customblack shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="https://agradipjana.github.io/Amazonclone/">
+                            <img class="rounded-t-lg" src="img/project-1.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="https://agradipjana.github.io/Amazonclone/">
+                                <h5 class="mb-2 text-2xl tracking-tight text-white dark:text-white">
+                                   Amazon Clone </h5>
+                            </a>
+                            <a href="https://agradipjana.github.io/Amazonclone/"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-customblackhover rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Visit
+                                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="button block m-auto mb-3 w-32 text-center p-3 rounded-md bg-customblack" href="projects.html">view
+                    more</a>
+            </div>
+
+            <!-- Contect -->
+            <div class="contect" id="contect">
+
+                <div class="contectform">
+                    <div class="flex items-center min-h-screen dark:bg-gray-900">
+                        <div class="container mx-auto">
+                            <div class="w-6/12 max-md:w-11/12 mx-auto my-10 bg-customblack p-5 rounded-md shadow-sm">
+                                <div class="text-center">
+                                    <h1 class="my-3 text-3xl font-semibold text-white dark:text-gray-200">
+                                        Contact Us
+                                    </h1>
+                                    <p class="text-gray-400 dark:text-gray-400">
+                                        Fill up the form below to send us a message.
+                                    </p>
+                                </div>
+                                <div class="m-7">
+                                    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                                        <input type="hidden" name="access_key"
+                                            value="635b7dba-5d12-4ba9-8e06-d484d006b2a4" />
+                                        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                                        <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                                        <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                                        <div class="mb-6">
+                                            <label for="name"
+                                                class="block mb-2 text-sm text-white dark:text-gray-400">Full
+                                                Name</label>
+                                            <input type="text" name="name" id="name" placeholder="Agradip Jana" required
+                                                class="w-full text-black px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-white dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                                        </div>
+                                        <div class="mb-6">
+                                            <label for="email"
+                                                class="block mb-2 text-sm text-white dark:text-gray-400">Email
+                                                Address</label>
+                                            <input type="email" name="email" id="email" placeholder="you@company.com"
+                                                required
+                                                class="w-full text-black px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-white dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                                        </div>
+                                        <div class="mb-6">
+                                            <label for="phone" class="text-sm text-white dark:text-gray-400">Phone
+                                                Number</label>
+                                            <input type="text" name="phone" id="phone" placeholder="+91 1234567890"
+                                                required
+                                                class="w-full text-black px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-white dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                                        </div>
+                                        <div class="mb-6">
+                                            <label for="message"
+                                                class="block text-black mb-2 text-sm text-white dark:text-gray-400">Your
+                                                Message</label>
+
+                                            <textarea rows="5" name="message" id="message" placeholder="Your Message"
+                                                class="w-full text-black px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-white dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                                                required></textarea>
+                                        </div>
+                                        <div class="mb-6">
+                                            <button type="submit"
+                                                class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+                                                Send Message
+                                            </button>
+                                        </div>
+                                        <p class="text-base text-center text-gray-400" id="result"></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+
+            <footer class="bg-transperent dark:bg-gray-800">
+                <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+                    <span class="text-md text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
+                            href="index.html" class="hover:underline">Agradip Jana</a>. All Rights Reserved.
+                    </span>
+                    <ul
+                        class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                        <li>
+                            <a href="#about" class="mr-4 hover:underline md:mr-6 ">About</a>
+                        </li>
+                        <li>
+                            <a href="#project" class="mr-4 hover:underline md:mr-6">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#socials" class="mr-4 hover:underline md:mr-6">Socials</a>
+                        </li>
+                        <li>
+                            <a href="#contect" class="hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+
+            <!-- footer ends -->
+        </div>
+    </div>
+</body>
+
+</html>
