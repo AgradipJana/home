@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi, I'm Agradip</title>
     <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8c436c430f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <!-- javascript -->
     <script src="main.js"></script>
+    <!-- css -->
     <style>
         html {
             scroll-behavior: smooth;
@@ -20,8 +22,7 @@
 
         .button:hover {
             transition-duration: 0.3s;
-            background: #00000085;
-            box-shadow: 10px 10px 5px #4a4a4a;
+            background: rgb(0, 0, 0);
         }
 
         .social_instagram:hover {
@@ -33,18 +34,18 @@
             background: conic-gradient(from -45deg, #ea4335, #4285f4, #34a853, #fbbc05) 73% 55%/150% 150% no-repeat;
         }
 
-        @media screen and (max-width:426px){
+        @media screen and (max-width:426px) {
 
-            .logo_img{
+            .logo_img {
                 width: 10rem !important;
                 height: 10rem !important;
             }
 
-            .landing_bio h1{
+            .landing_bio h1 {
                 font-size: 2rem !important;
             }
 
-            .project_flex{
+            .project_flex {
                 flex-direction: column !important;
             }
         }
@@ -56,20 +57,18 @@
     <div class="body p-5 text-white bg-fixed m-0 max-xl:mb-2"
         style="background-image: url(img/bg_1.gif); background-repeat: no-repeat; background-size: cover; background-position: center; font-family: 'Poppins', sans-serif;">
         <!-- main -->
-        <div class="main-container flex flex-col relative rounded-xl w-full bg-customblack bg-opacity-10 backdrop-blur-xl">
-         
-
+        <div
+            class="main-container flex flex-col relative rounded-xl w-full bg-customblack bg-opacity-10 backdrop-blur-xl">
             <!-- landing -->
-            <div class="landing m-auto  max-md:m-2" style="height:82vh">
+            <div class="landing m-auto  max-md:m-2 mt-24" style="height:82vh">
                 <div class="landing_bio text-white">
                     <img src="img/logo.jpg" class="logo_img m-auto h-52 w-52 rounded-full" alt="logo"><br>
-                    <p class="text-center pb-2">Hi, I am</p>
-                    <h1 class="text-center text-5xl font-bold pb-2 text-customgreen">AGRADIP <p class="inline">JANA</p>
+                    <h1 class="text-center text-5xl font-bold pb-2" style="font-family: 'Josefin Sans', sans-serif;">AGRADIP <p class="inline">JANA</p>
                     </h1>
-                    <p class="text-center drop-shadow-2xl pb-5">Full Stack Developer &nbsp;|&nbsp; Tech
+                    <p class="text-center text-sm drop-shadow-2xl pb-5 text-customgreen">Full Stack Developer &nbsp;|&nbsp; Tech
                         Enthusiast</p>
                     <br>
-                    <a class="button flex justify-center mx-36 text-center p-3 rounded-md bg-customblack"
+                    <a class="button flex justify-center mx-36 text-center py-3 px-5 rounded-md bg-customblack"
                         href="#about">Explore</a>
                 </div>
             </div>
@@ -83,54 +82,51 @@
                         </p>
                     </h1>
                     <!-- about details -->
-                    <div class="about-box flex flex-row justify-around p-10 max-md:flex-col  max-md:justify-center " >
-                        <div class="about-bio w-5/12 max-md:w-full text-left max-md:text-center">
-                            <h1 class="text-customgreen font-bold text-4xl max-md:hidden">AGRADIP JANA</h1><br>
+                    <div class="about-box flex flex-col  justify-center items-center p-10 max-md:flex-col  max-md:justify-center ">
+                        <div class="about-bio w-6/12 text-md max-md:w-full text-center">
                             <p>Hi, I am Agradip Jana. Currently Pursuing BCA Degree from Midnapore Day College. I am a
                                 self-taught
                             <p class="inline text-customgreen">Web Developer</p>. I know <p
                                 class="inline text-customgreen">HTML, CSS, JS, MYSQL, Bootstrap, Tailwind CSS, PHP</p>.
                             Currently
-                            learning C language.</p><br>
-                            <div class="button inline-block p-3 pl-5 pr-5 rounded-md bg-customblack"><a
-                                    href="">Resume</a></div>
+                            learning C language.</p>
                         </div>
                         <!-- language -->
-                        <div class="language w-4/12 max-md:w-full">
+                        <div class="language w-6/12 max-md:w-1/2">
                             <div class="language_code flex flex-row justify-center items-center pt-10 p-5">
                                 <div class="code"><img src="img/html.png"
-                                        class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
+                                    class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
                                 </div><br>
                                 <div class="code"><img src="img/css.png"
-                                        class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
+                                    class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
                                 </div><br>
                                 <div class="code"><img src="img/js.png"
-                                        class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
+                                    class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
                                 </div><br>
                                 <div class="code"><img src="img/bootstrap.png"
-                                        class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
+                                    class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
                                 </div>
-                            </div>
-
-                            <div class="language flex flex-row justify-center items-center p-5">
                                 <div class="code"><img src="img/Tailwind.png"
-                                        class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
+                                    class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
                                 </div><br>
                                 <div class="code"><img src="img/mysql.png"
-                                        class="w-28 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
+                                    class="w-28 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
                                 </div><br>
                                 <div class="code"><img src="img/php.png"
                                         class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
                                 </div><br>
                                 <div class="code"><img src="img/c.png"
                                         class="w-20 p-3 hover:bg-customblack rounded hover:duration-150" alt="HTML">
-                                </div><br>
+                                    </div><br>
+                                </div>
                             </div>
+                            <div class="button inline-block p-3 pl-5 pr-5 rounded-md bg-customblack"><a
+                                    href="">Resume</a></div>
                         </div>
-                    </div>
-
-                    <!-- social -->
-                    <div class="social_media flex flex-row justify-center space-x-2 max-md:space-x-0 max-md:bg-customblack" id="socials">
+                        
+                        <!-- social -->
+                    <div class="social_media flex flex-row justify-center space-x-2 max-md:space-x-0 max-md:bg-customblack"
+                        id="socials">
                         <div
                             class="social pl-5 pr-5 pt-2 pb-2  bg-transperent rounded-3xl m-3 hover:bg-sky-800 hover:duration-150 cursor-pointer">
                             <abbr title="Linkedin">
@@ -148,7 +144,8 @@
                         <div
                             class="social pl-5 pr-5 pt-2 pb-2  bg-transperent rounded-3xl m-3 hover:bg-gray-600 hover:duration-150 cursor-pointer">
                             <abbr title="Github">
-                                <a href="https://github.com/AgradipJana" class="social_links"><i class="fa-brands fa-github text-gray text-2xl"></i>
+                                <a href="https://github.com/AgradipJana" class="social_links"><i
+                                        class="fa-brands fa-github text-gray text-2xl"></i>
                                 </a>
                             </abbr>
                         </div>
@@ -179,7 +176,8 @@
                 </h1>
                 <div class="project_flex flex flex-row max-md:flex-col">
                     <!-- project item -->
-                    <div class="max-w-sm m-auto my-10 rounded-lg bg-customblack shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm m-auto my-10 rounded-lg bg-customblack shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="https://agradipjana.github.io/todolist/">
                             <img class="rounded-t-lg" src="img/todolist.png" alt="" />
                         </a>
@@ -200,7 +198,8 @@
                         </div>
                     </div>
                     <!-- project item -->
-                    <div class="max-w-sm m-auto my-10 rounded-lg bg-customblack shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm m-auto my-10 rounded-lg bg-customblack shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="https://agradipjana.github.io/weatherapp/">
                             <img class="rounded-t-lg" src="img/weather.png" alt="" />
                         </a>
@@ -221,14 +220,15 @@
                         </div>
                     </div>
                     <!-- project item -->
-                    <div class="max-w-sm m-auto my-10 rounded-lg bg-customblack shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm m-auto my-10 rounded-lg bg-customblack shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="https://agradipjana.github.io/Amazonclone/">
                             <img class="rounded-t-lg" src="img/project-1.png" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="https://agradipjana.github.io/Amazonclone/">
                                 <h5 class="mb-2 text-2xl tracking-tight text-white dark:text-white">
-                                   Amazon Clone </h5>
+                                    Amazon Clone </h5>
                             </a>
                             <a href="https://agradipjana.github.io/Amazonclone/"
                                 class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-customblackhover rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -243,7 +243,8 @@
                     </div>
                 </div>
 
-                <a class="button block m-auto mb-3 w-32 text-center p-3 rounded-md bg-customblack" href="projects.html">view
+                <a class="button block m-auto mb-3 w-32 text-center p-3 rounded-md bg-customblack"
+                    href="projects.html">view
                     more</a>
             </div>
 
@@ -319,8 +320,8 @@
 
             <footer class="bg-transperent dark:bg-gray-800">
                 <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-                    <span class="text-md text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
-                            href="index.html" class="hover:underline">Agradip Jana</a>. All Rights Reserved.
+                    <span class="text-md text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="index.html"
+                            class="hover:underline">Agradip Jana</a>. All Rights Reserved.
                     </span>
                     <ul
                         class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
