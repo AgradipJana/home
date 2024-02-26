@@ -19,28 +19,6 @@
     <!-- css -->
     <style>
         
-
-.preloader {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db; /* Change the color as needed */
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.content {
-    display: none; /* Content will be hidden until preloader is complete */
-    text-align: center;
-    padding: 20px;
-}
-
-        
         html {
             scroll-behavior: smooth;
         }
@@ -82,13 +60,9 @@
     <div class=" body p-3 text-white bg-fixed m-0 max-xl:mb-2"
         style="background-image: url(img/bg.gif); background-repeat: no-repeat; background-size: cover; background-position: center; font-family: 'Poppins', sans-serif;">
         
-        
-<div class="preloader-container">
-    <div class="preloader"></div>
-</div>
         <!-- main -->
         <div
-            class="content main-container flex flex-col relative rounded-xl w-full bg-customblack bg-opacity-10 backdrop-blur-sm">
+            class=" main-container flex flex-col relative rounded-xl w-full bg-customblack bg-opacity-10 backdrop-blur-sm">
             <!-- landing -->
             <div class="landing m-auto" style="height:100vh">
                 <div class="landing_bio text-white mt-28 max-md:mt-44">
@@ -388,19 +362,7 @@
             <!-- footer ends -->
         </div>
     </div>
-     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-    // Simulate a delay (you can replace this with actual loading logic)
-    setTimeout(function () {
-        // Hide the preloader
-        document.querySelector('.preloader-container').style.display = 'none';
-
-        // Show the content
-        document.querySelector('.content').style.display = 'block';
-    }, 2000); // Adjust the timeout as needed
-});
-
-    </script>
+   
 </body>
 
 </html>
