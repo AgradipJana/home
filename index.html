@@ -4,187 +4,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi, I'm Agradip</title>
-    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
-    <!-- Tailwind -->
+    <title>Agradip Jana</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap" rel="stylesheet">
-    <!-- javascript -->
-    <script src="main.js"></script>
-    <!--     font Awesome -->
-    <script src="https://kit.fontawesome.com/8c436c430f.js" crossorigin="anonymous"></script>
-    <!-- css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap"
+        rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/c534abef2b.js" crossorigin="anonymous"></script>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #preloader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 8px solid #3498db;
+            border-top: 8px solid #fff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+
+        nav {
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .nav-links.show {
+                display: block;
+            }
+        }
+
         
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .button:hover {
-            transition-duration: 0.3s;
-            background: rgb(0, 0, 0);
-        }
-
-        .social_instagram:hover {
-            background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-        }
-
-        .social_gmail:hover {
-            /* background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat; */
-            background: conic-gradient(from -45deg, #ea4335, #4285f4, #34a853, #fbbc05) 73% 55%/150% 150% no-repeat;
-        }
-
-        @media screen and (max-width:426px) {
-
-            .logo_img {
-                width: 10rem !important;
-                height: 10rem !important;
-            }
-
-            .landing_bio h1 {
-                font-size: 2rem !important;
-            }
-
-            .project_flex {
-                flex-direction: column !important;
-            }
-        }
     </style>
 </head>
 
-<body>
-    <!-- body container -->
-    <div class=" body p-3 text-white bg-fixed m-0 max-xl:mb-2"
-        style="background-image: url(img/bg.gif); background-repeat: no-repeat; background-size: cover; background-position: center; font-family: 'Poppins', sans-serif;">
-        
-        <!-- main -->
-        <div
-            class=" main-container flex flex-col relative rounded-xl w-full bg-customblack bg-opacity-10 backdrop-blur-sm">
-            <!-- landing -->
-            <div class="landing m-auto" style="height:100vh">
-                <div class="landing_bio text-white mt-28 max-md:mt-44">
-                    <img src="img/logo.jpg" class="logo_img m-auto h-52 w-52 rounded-full" alt="logo"><br>
-                    <h1 class="text-center text-5xl font-bold pb-2" style="font-family: 'Josefin Sans', sans-serif;">
-                        AGRADIP <p class="inline">JANA</p>
-                    </h1>
-                    <p class="text-center text-sm drop-shadow-2xl pb-5 text-customgreen">Full Stack Developer
-                        &nbsp;|&nbsp; Tech
-                        Enthusiast</p>
-                    <br>
-                    <a class="button flex justify-center mx-36 text-center py-3 px-5 rounded-md bg-customblack"
-                        href="#about">Explore</a>
+<body style="font-family: poppins;">
+    <div id="preloader"></div>
+    <div class="hidden" id="mainContent">
+        <div class="main text-white  w-full h-full p-2 " style="background: url(bg.gif) no-repeat center/cover;">
+            <div class="content flex flex-col relative rounded-xl w-full h-full p-2 bg-opacity-10 backdrop-blur-sm">
+                <div class="header p-2 flex flex-row justify-between">
+                    <div class="logo w-20"><img src="logo.jpg" class="rounded-full" alt="Agradip_DP"></div>
+                    <div class="navbar">
+                        <nav>
+                            <div class="menu-icon">&#9776;</div>
+                            <div class="nav-links">
+                                <a href="#">Home</a>
+                                <a href="#">About</a>
+                                <a href="#">Services</a>
+                                <a href="mailto:workwithagradip@gmail.com">Contact</a>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
-            </div>
 
-            <!-- about me -->
-            <div class="about w-full ">
-                <!-- about -->
+                
+            <div class="landing flex flex-col justify-center items-center" style="height: 80vh;">
+                <h1 class="text-6xl" style="font-family: Staatliches, sans-serif;" ;>Agradip Jana</h1>
+                <p class="text-red text-sm">Full Stack Developer | Freelancer</p><br>
+                <a href="#about" class="btn py-3 px-7 rounded-sm bg-gray-100 bg-opacity-10 backdrop-blur-sm rounded-sm">
+                    Know me</a>
+                </div>
+                <div class="landing m-auto flex flex-col justify-center items-center">
+                     <!-- about -->
                 <div class="about ">
-                    <h1 class="title text-center text-3xl font-bold" id="about">Know Abo<p
-                            class="inline text-customgreen">ut Me.
+                    <h1 class="title text-center text-3xl font-bold" id="about">Know<p
+                            class="inline text-customgreen">About Me.
                         </p>
                     </h1>
                     <!-- about details -->
                     <div
-                        class="about-box flex flex-col  justify-center items-center p-10 max-md:flex-col  max-md:justify-center ">
-                        <div class="about-bio w-6/12 text-md max-md:w-full text-center">
+                        class="about-box flex flex-col  justify-center items-center p-5 max-md:flex-col  max-md:justify-center ">
+                        <div class="about-bio w-8/12 text-md max-md:w-full text-center">
                             <p>Hi, I am Agradip Jana, Working as BPM at India Post. I am a
                                 self-taught
-                            <p class="inline text-customgreen">Web Developer</p>. I know <p
-                                class="inline text-customgreen">HTML, CSS, JS, MYSQL, Bootstrap, Tailwind CSS, PHP, C,
+                            <p class="inline ">Web Developer</p>. I know <p
+                                class="inline ">HTML, CSS, JS, MYSQL, Bootstrap, Tailwind CSS, PHP, C,
                                 Wordpress.</p>.</p>
-                        </div>
-                        <!-- language -->
-                        <div class="language w-6/12 max-md:w-full">
-                            <div class="language_code flex flex-row justify-center items-center pt-10 p-5">
-                                <div class="code"><img src="img/html.png"
-                                        class="w-20 p-3 max-md:w-64 max-md:p-1 hover:bg-customblack rounded hover:duration-150"
-                                        alt="HTML">
-                                </div><br>
-                                <div class="code"><img src="img/css.png"
-                                        class="w-20 p-3 max-md:w-64 max-md:p-1 hover:bg-customblack rounded hover:duration-150"
-                                        alt="HTML">
-                                </div><br>
-                                <div class="code"><img src="img/js.png"
-                                        class="w-20 p-3 max-md:w-64 max-md:p-1 hover:bg-customblack rounded hover:duration-150"
-                                        alt="HTML">
-                                </div><br>
-                                <div class="code"><img src="img/bootstrap.png"
-                                        class="w-20 p-3 max-md:w-64 max-md:p-1 hover:bg-customblack rounded hover:duration-150"
-                                        alt="HTML">
-                                </div>
-                                <div class="code"><img src="img/Tailwind.png"
-                                        class="w-20 p-3 max-md:w-64 max-md:p-1 hover:bg-customblack rounded hover:duration-150"
-                                        alt="HTML">
-                                </div><br>
-                                <div class="code"><img src="img/mysql.png"
-                                        class="w-28 p-3 max-md:w-64 max-md:p-1 hover:bg-customblack rounded hover:duration-150"
-                                        alt="HTML">
-                                </div><br>
-                                <div class="code"><img src="img/php.png"
-                                        class="w-20 p-3 max-md:w-64 max-md:p-1 hover:bg-customblack rounded hover:duration-150"
-                                        alt="HTML">
-                                </div><br>
-                                <div class="code"><img src="img/c.png"
-                                        class="w-20 p-3 max-md:w-64 max-md:p-1 hover:bg-customblack rounded hover:duration-150"
-                                        alt="HTML">
-                                </div><br>
-                                <div class="code"><img src="img/wordpress.png"
-                                        class="w-20 p-3 max-md:w-64 max-md:p-1 hover:bg-customblack rounded hover:duration-150"
-                                        alt="HTML">
-                                </div><br>
+                        </div><br>
+                        <div class="skills flex ">
+                            <div class="language"><img class="w-16 " src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" alt="HTML"></div>
+                            <div class="language"><img class="w-16 " src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" alt="CSS"></div>
+                            <div class="language"><img class="w-16 " src="js.png" alt="JS"></div>
+                            <div class="language"><img class="w-20 px-2 " src="https://ph-files.imgix.net/99145b25-863b-473c-ad95-58dc7471e05f.png?auto=format" alt="Bootstrap"></div>
+                            <div class="language"><img class="w-16 " src="https://files.raycast.com/nwt9ncojkvwmjfkaada8upafvpnu" alt="Tailwind"></div> 
                             </div>
-                        </div>
-                        <div class="button inline-block p-3 pl-5 pr-5 rounded-md bg-customblack"><a href="">Resume</a>
+                            <br>
+                        <div class="skills flex ">
+                            <div class="language"><img class="w-16 px-1" src="https://camo.githubusercontent.com/8d7d852c69fab3d737aae3a60fe65afe3a5d80277c81081e2923433c05753e86/68747470733a2f2f7261772e6769746875622e636f6d2f436972636c6543492d5075626c69632f63696d672d7068702f6d61696e2f696d672f636972636c652d7068702e7376673f73616e6974697a653d74727565" alt="PHP"></div>
+                            <div class="language"><img class="w-16 px-1" src="https://media-cdn.openxcell.com/wp-content/uploads/2024/01/09155523/Group-56817.png" alt="MYSQL"></div>
+                            <div class="language"><img class="w-16 px-1" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C"></div>
+                            <div class="language"><img class="w-16 px-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1024px-WordPress_blue_logo.svg.png" alt="WordPress"></div>
+                        </div><br>
+
+                        <div class="button inline-block p-3 pl-5 pr-5  bg-gray-100 bg-opacity-10 backdrop-blur-sm rounded-sm"><a href="">Resume</a>
+                        </div><br>
+                        <div class="socials flex">
+                            <div class="links p-2"><a href=""><i class="fa-brands fa-linkedin text-2xl hover:text-teal-300 duration-150"></i></a></div>
+                            <div class="links p-2"><a href=""><i class="fa-brands fa-x-twitter text-2xl hover:text-teal-300 duration-150"></i></a></div>
+                            <div class="links p-2"><a href=""><i class="fa-brands fa-github text-2xl hover:text-teal-300 duration-150"></i></a></div>
+                            <div class="links p-2"><a href=""><i class="fa-brands fa-instagram text-2xl hover:text-teal-300 duration-150"></i></a></div>
+                            <div class="links p-2"><a href=""><i class="fa-solid fa-envelope text-2xl hover:text-teal-300 duration-150"></i></a></div>
                         </div>
                     </div>
-
-                    <!-- social -->
-                    <div class="social_media flex flex-row justify-center space-x-2 max-md:space-x-0 max-md:bg-customblack"
-                        id="socials">
-                        <div
-                            class="social pl-5 pr-5 pt-2 pb-2  bg-transperent rounded-3xl m-3 hover:bg-sky-800 hover:duration-150 cursor-pointer">
-                            <abbr title="Linkedin">
-                                <a href="https://www.linkedin.com/in/agradipjana/" class="social_links"><i
-                                        class="fa-brands fa-linkedin-in text-grey text-2xl"></i></a>
-                            </abbr>
-                        </div>
-                        <div
-                            class="social pl-5 pr-5 pt-2 pb-2  bg-transperent rounded-3xl m-3 hover:bg-black hover:duration-150 cursor-pointer">
-
-                            <a href="https://twitter.com/agradip_twts" class="social_links"><abbr title="Twitter"><i
-                                        class="fa-brands fa-x-twitter text-grey text-2xl"></i></abbr> </a>
-
-                        </div>
-                        <div
-                            class="social pl-5 pr-5 pt-2 pb-2  bg-transperent rounded-3xl m-3 hover:bg-gray-600 hover:duration-150 cursor-pointer">
-                            <abbr title="Github">
-                                <a href="https://github.com/AgradipJana" class="social_links"><i
-                                        class="fa-brands fa-github text-gray text-2xl"></i>
-                                </a>
-                            </abbr>
-                        </div>
-                        <div
-                            class="social social_instagram pl-5 pr-5 pt-2 pb-2  bg-transperent rounded-3xl m-3 hover:bg-customblack hover:duration-150 cursor-pointer">
-                            <abbr title="Instagram">
-                                <a href="https://www.instagram.com/iammas00m/" class="social_links"><i
-                                        class="fa-brands fa-instagram text-grey text-2xl"></i> </a>
-                            </abbr>
-                        </div>
-                        <div
-                            class="social social_gmail pl-5 pr-5 pt-2 pb-2  bg-transperent rounded-3xl m-3 hover:bg-customblack hover:duration-150 cursor-pointer">
-                            <abbr title="Mail">
-                                <a href="mailto: workwithagradip@gmail.com" class="social_links"><i
-                                        class="fa-regular fa-envelope text-grey text-2xl"></i></a>
-                            </abbr>
-                        </div>
-                    </div>
-
                 </div>
             </div>
+
             <br><br>
             <!-- Projects -->
             <div class="projects w-full">
@@ -197,7 +175,7 @@
                     <div
                         class="max-w-sm m-auto my-10 rounded-lg bg-customblack shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="https://newyear2024byagradip.netlify.app/">
-                            <img class="rounded-t-lg" src="img/happynewyear.png" alt="" />
+                            <img class="rounded-t-lg" src="happynewyear.png" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="https://newyear2024byagradip.netlify.app/">
@@ -219,7 +197,7 @@
                     <div
                         class="max-w-sm m-auto my-10 rounded-lg bg-customblack shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="https://agradipjana.github.io/weatherapp/">
-                            <img class="rounded-t-lg" src="img/weather.png" alt="" />
+                            <img class="rounded-t-lg" src="weather.png" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="https://agradipjana.github.io/weatherapp/">
@@ -241,7 +219,7 @@
                     <div
                         class="max-w-sm m-auto my-10 rounded-lg bg-customblack shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="https://agradipjana.github.io/alienwear/">
-                            <img class="rounded-t-lg" src="img/alienwear.png" alt="" />
+                            <img class="rounded-t-lg" src="alienwear.png" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="https://agradipjana.github.io/alienwear">
@@ -261,12 +239,11 @@
                     </div>
                 </div>
 
-                <a class="button block m-auto mb-3 w-32 text-center p-3 rounded-md bg-customblack"
-                    href="projects.html">view
+                <a class='button block m-auto mb-3 w-32 text-center p-3 rounded-md bg-customblack' href='/projects'>view
                     more</a>
             </div>
 
-            <!-- Contect -->
+            <!-- Contect
             <div class="contect" id="contect">
 
                 <div class="contectform">
@@ -332,17 +309,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- footer -->
 
             <footer class="bg-transperent dark:bg-gray-800">
                 <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-                    <span class="text-md text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="index.html"
-                            class="hover:underline">Agradip Jana</a>. All Rights Reserved.
+                    <span class="text-md text-white sm:text-center dark:text-gray-400">© 2023 <a class='hover:underline' href='/'>Agradip Jana</a>. All Rights Reserved.
                     </span>
                     <ul
-                        class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                        class="flex flex-wrap items-center mt-3 text-sm font-medium text-white dark:text-gray-400 sm:mt-0">
                         <li>
                             <a href="#about" class="mr-4 hover:underline md:mr-6 ">About</a>
                         </li>
@@ -353,16 +329,46 @@
                             <a href="#socials" class="mr-4 hover:underline md:mr-6">Socials</a>
                         </li>
                         <li>
-                            <a href="#contect" class="hover:underline">Contact</a>
+                            <a href="mailto:workwithagradip@gmail.com" class="hover:underline">Contact</a>
                         </li>
                     </ul>
                 </div>
             </footer>
 
             <!-- footer ends -->
+
         </div>
     </div>
-   
+    <script>
+        tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          customgreen: 'rgb(0, 255, 162)',
+          customblack: '#00000046',
+          customblackhover: '#000000',
+        }
+      }
+    }
+  }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Simulate loading delay
+            setTimeout(function () {
+                document.getElementById("preloader").classList.add("hidden");
+                document.getElementById("mainContent").classList.remove("hidden");
+            }, 3000); // Adjust the duration as needed
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector('.menu-icon');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuIcon.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+            });
+        });
+    </script>
 </body>
 
 </html>
