@@ -13,47 +13,104 @@
     <script src="https://kit.fontawesome.com/8c436c430f.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
     <style>
-        html {
+     body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        html{
             scroll-behavior: smooth;
         }
 
-
-        body::-webkit-scrollbar {
-            width: 0.5em;
+        #preloader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 8px solid #3498db;
+            border-top: 8px solid #fff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
         }
 
-        body::-webkit-scrollbar-track {
-            background: linear-gradient(to right, #8e9eab, #eef2f3);
-            -webkit-box-shadow: inset 0 0 6px rgba(109, 0, 0, 0.3);
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
-        body::-webkit-scrollbar-thumb {
-            border-radius: 5px;
-            background: linear-gradient(120deg, #525252, #3d72b4);
+        .hidden {
+            display: none;
         }
+
+
+        nav {
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .nav-links.show {
+                display: block;
+            }
+        }
+
+        
     </style>
 </head>
 
 <body class="p-0 m-0">
-    <!-- body container -->
-    <div class="body p-3 text-white bg-fixed"
-        style="background-image: url(bg.gif); background-repeat: no-repeat; background-size: cover; background-position: center; font-family: 'Poppins', sans-serif; width: 100vw;">
-        <!-- main -->
-        <div class="main-container flex flex-col relative rounded-xl w-full bg-white bg-opacity-10 backdrop-blur-md">
-            <!-- header -->
-            <div class="header flex flex-row justify-between m-0 p-7 cursor-pointer	h-1/6">
-                <!-- logo -->
-                <div class="logo flex ">
-                    <img src="logo.jpg" alt="logo" class="w-16 h-16 rounded-full mr-5">
-                    <h1 class="text-3xl font-bold text-white pt-3">Agr<p class="inline text-customgreen">adip</p>
-                    </h1>
+  
+<body style="font-family: poppins;">
+    <div id="preloader"></div>
+    <div class="hidden" id="mainContent">
+        <div class="main text-white  w-full h-full p-2 " style="background: url(bg.gif) no-repeat center/cover;">
+            <div class="content flex flex-col relative rounded-xl w-full h-full p-2 bg-opacity-10 backdrop-blur-sm">
+                <div class="header p-2 flex flex-row justify-between">
+                    <div class="logo w-20"><img src="logo.jpg" class="rounded-full" alt="Agradip_DP"></div>
+                    <div class="navbar">
+                        <nav>
+                            <div class="menu-icon">&#9776;</div>
+                            <div class="nav-links">
+                                <a href="#home">Home</a>
+                                <a href="#about">About</a>
+                                <a href="#project">Project</a>
+                                <a href="mailto:workwithagradip@gmail.com">Contact</a>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
-                <!-- navbar -->
-                <div class="navbar pt-3">
-                    <a href="index.html"><i
-                            class="fa-solid fa-house text-3xl  hover:text-blue-600 hover:duration-150"></i></a>
-                </div>
-            </div>
 
             <!-- landing -->
             <div class="landing m-auto">
