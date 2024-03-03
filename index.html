@@ -24,6 +24,10 @@
             background-color: #f4f4f4;
         }
 
+        html{
+            scroll-behavior: smooth;
+        }
+
         #preloader {
             position: absolute;
             top: 50%;
@@ -102,9 +106,9 @@
                         <nav>
                             <div class="menu-icon">&#9776;</div>
                             <div class="nav-links">
-                                <a href="#">Home</a>
-                                <a href="#">About</a>
-                                <a href="#">Services</a>
+                                <a href="#home">Home</a>
+                                <a href="#about">About</a>
+                                <a href="#project">Project</a>
                                 <a href="mailto:workwithagradip@gmail.com">Contact</a>
                             </div>
                         </nav>
@@ -112,7 +116,7 @@
                 </div>
 
                 
-            <div class="landing flex flex-col justify-center items-center" style="height: 80vh;">
+            <div class="landing flex flex-col justify-center items-center" id="home" style="height: 80vh;">
                 <h1 class="text-6xl" style="font-family: Staatliches, sans-serif;" ;>Agradip Jana</h1>
                 <p class="text-red text-sm">Full Stack Developer | Freelancer</p><br>
                 <a href="#about" class="btn py-3 px-7 rounded-sm bg-gray-100 bg-opacity-10 backdrop-blur-sm rounded-sm">
@@ -128,7 +132,7 @@
                     <!-- about details -->
                     <div
                         class="about-box flex flex-col  justify-center items-center p-5 max-md:flex-col  max-md:justify-center ">
-                        <div class="about-bio w-8/12 text-md max-md:w-full text-center">
+                        <div id="about" class="about-bio w-8/12 text-md max-md:w-full text-center">
                             <p>Hi, I am Agradip Jana, Working as BPM at India Post. I am a
                                 self-taught
                             <p class="inline ">Web Developer</p>. I know <p
@@ -153,11 +157,11 @@
                         <div class="button inline-block p-3 pl-5 pr-5  bg-gray-100 bg-opacity-10 backdrop-blur-sm rounded-sm"><a href="">Resume</a>
                         </div><br>
                         <div class="socials flex">
-                            <div class="links p-2"><a href=""><i class="fa-brands fa-linkedin text-2xl hover:text-teal-300 duration-150"></i></a></div>
-                            <div class="links p-2"><a href=""><i class="fa-brands fa-x-twitter text-2xl hover:text-teal-300 duration-150"></i></a></div>
-                            <div class="links p-2"><a href=""><i class="fa-brands fa-github text-2xl hover:text-teal-300 duration-150"></i></a></div>
-                            <div class="links p-2"><a href=""><i class="fa-brands fa-instagram text-2xl hover:text-teal-300 duration-150"></i></a></div>
-                            <div class="links p-2"><a href=""><i class="fa-solid fa-envelope text-2xl hover:text-teal-300 duration-150"></i></a></div>
+                            <div class="links p-2"><a href="www.linkedin.com/in/agradipjana"><i class="fa-brands fa-linkedin text-2xl hover:text-teal-300 duration-150"></i></a></div>
+                            <div class="links p-2"><a href="https://twitter.com/agradip_twts"><i class="fa-brands fa-x-twitter text-2xl hover:text-teal-300 duration-150"></i></a></div>
+                            <div class="links p-2"><a href="https://github.com/AgradipJana"><i class="fa-brands fa-github text-2xl hover:text-teal-300 duration-150"></i></a></div>
+                            <div class="links p-2"><a href="https://www.instagram.com/iammas00m/"><i class="fa-brands fa-instagram text-2xl hover:text-teal-300 duration-150"></i></a></div>
+                            <div class="links p-2"><a href="mailto:workwithagradip@gmail.com"><i class="fa-solid fa-envelope text-2xl hover:text-teal-300 duration-150"></i></a></div>
                         </div>
                     </div>
                 </div>
@@ -313,12 +317,12 @@
 
             <!-- footer -->
 
-            <footer class="bg-transperent ">
+            <footer class="bg-transperent dark:bg-gray-800">
                 <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-                    <span class="text-md text-white sm:text-center ">© 2023 <a class='hover:underline' href='/'>Agradip Jana</a>. All Rights Reserved.
+                    <span class="text-md text-white sm:text-center dark:text-gray-400">© 2023 <a class='hover:underline' href='/'>Agradip Jana</a>. All Rights Reserved.
                     </span>
                     <ul
-                        class="flex flex-wrap items-center mt-3 text-sm font-medium text-white  sm:mt-0">
+                        class="flex flex-wrap items-center mt-3 text-sm font-medium text-white dark:text-gray-400 sm:mt-0">
                         <li>
                             <a href="#about" class="mr-4 hover:underline md:mr-6 ">About</a>
                         </li>
